@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits - VitaGreen</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">VITA<span>GREEN</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="nos-produits.html">Nos produits</a></li>
+                        <li><a href="notre-histoire.html">Notre histoire</a></li>
+                        <li><a href="nos-valeurs.html">Nos valeurs</a></li>
+                        <li><a href="processus.html">Processus</a></li>
+                        <li><a href="sante-bien-etre.html">Santé & Bien-être</a></li>
+                        <li><a href="partenaires-producteurs.html">Partenaires</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-produits">
+        <div class="container">
+            <h1>NOS PRODUITS</h1>
+            <p>NOTRE UNIVERS DE SAVEURS</p>
+            <p class="hero-subtitle">DES BOISSONS SAINES POUR CHAQUE MOMENT DE VIE</p>
+        </div>
+    </section>
+
+    <!-- FILTRES ET PRODUITS -->
+    <section class="boutique">
+        <div class="container">
+            <div class="boutique-header">
+                <nav class="breadcrumb">
+                    <a href="index.html">Accueil</a> / <span>Boutique</span>
+                </nav>
+                <div class="boutique-info">
+                    <p>Affichage de 1-12 sur 62 résultats</p>
+                    <select class="tri-select">
+                        <option>Tri par défaut</option>
+                        <option>Prix croissant</option>
+                        <option>Prix décroissant</option>
+                        <option>Plus populaires</option>
+                        <option>Nouveautés</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="boutique-content">
+                <!-- SIDEBAR FILTRES -->
+                <aside class="filters-sidebar">
+                    <!-- RECHERCHE -->
+                    <div class="filter-group">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                    </div>
+
+                    <!-- FILTRE PRIX -->
+                    <div class="filter-group">
+                        <h4>FILTER BY PRICE</h4>
+                        <div class="price-range">
+                            <div class="price-inputs">
+                                <span>3 €</span>
+                                <span>9 €</span>
+                            </div>
+                            <div class="price-slider">
+                                <div class="slider-track"></div>
+                            </div>
+                            <div class="price-labels">
+                                <span>Prix Min.</span>
+                                <span>Prix Max.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CATÉGORIES -->
+                    <div class="filter-group">
+                        <h4>CATEGORIES</h4>
+                        <ul class="categories-list">
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Jus & Nectars (18)
+                                </label>
+                                <ul class="subcategories">
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Jus Pressés à Froid (12)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Nectars Gourmands (3)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Classiques (3)
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Infusions & Thés (13)
+                                </label>
+                                <ul class="subcategories">
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Infusions Bien-être (6)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Thés Bio (5)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Infusions Froides (2)
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Boissons Énergisantes (3)
+                                </label>
+                                <ul class="subcategories">
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Boissons Sport (2)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Boissons Vitalité (1)
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Eaux Infusées (3)
+                                </label>
+                                <ul class="subcategories">
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Eaux Infusées Classiques (1)
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="category-item">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Eaux Infusées Spécialités (2)
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Smoothies (3)
+                                </label>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Laits Végétaux (4)
+                                </label>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Shots & Concentrés (6)
+                                </label>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Boissons Spéciales (9)
+                                </label>
+                            </li>
+                            <li>
+                                <label class="category-item">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Boissons Fermentées (2)
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- BADGES SERVICES -->
+                    <div class="filter-group badges-group">
+                        <h4>NOS ENGAGEMENTS</h4>
+                        <div class="badges-grid">
+                            <div class="badge">🍃 Fabrique 100% Énergie Verte</div>
+                            <div class="badge">👨‍🌾 Producteurs Locaux</div>
+                            <div class="badge">♻️ Emballages Consignés</div>
+                            <div class="badge">🌱 Ateliers Zéro Déchet</div>
+                            <div class="badge">🎓 Expertise Partagée</div>
+                            <div class="badge">👪 Accessible Famille</div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- PRODUITS -->
+                <main class="products-grid">
+                    <!-- Produit 1 -->
+                    <div class="product-card">
+                        <img src="img/produits/Citrus_Flow.webp" alt="Active Lemon">
+                        <div class="product-category">Boissons Sport</div>
+                        <h3>ACTIVE LEMON</h3>
+                        <p class="product-description">Formule endurance au guarana et électrolytes</p>
+                        <p class="product-price">4,90 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 2 -->
+                    <div class="product-card">
+                        <img src="img/produits/apple_pure.webp" alt="Apple Pure">
+                        <div class="product-category">Classiques</div>
+                        <h3>APPLE PURE</h3>
+                        <p class="product-description">Jus de pomme pur pressé à froid</p>
+                        <p class="product-price">3,90 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 3 -->
+                    <div class="product-card">
+                        <img src="img/produits/berry_power.webp" alt="Berry Power">
+                        <div class="product-category">Smoothies</div>
+                        <h3>BERRY POWER</h3>
+                        <p class="product-description">Mélange de baies et superfruits</p>
+                        <p class="product-price">5,30 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 4 -->
+                    <div class="product-card">
+                        <img src="img/produits/bettergreen.webp" alt="Bettergreen">
+                        <div class="product-category">Jus Pressés à Froid</div>
+                        <h3>BETTERGREEN</h3>
+                        <p class="product-description">Jus vert détox betterave-épinard</p>
+                        <p class="product-price">5,20 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 5 -->
+                    <div class="product-card">
+                        <img src="img/produits/blue_calm.webp" alt="Blue Calm">
+                        <div class="product-category">Infusions Bien-être</div>
+                        <h3>BLUE CALM</h3>
+                        <p class="product-description">Infusion détente camomille-lavande</p>
+                        <p class="product-price">4,80 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 6 -->
+                    <div class="product-card">
+                        <img src="img/produits/boost_shot.webp" alt="Boost Shot">
+                        <div class="product-category">Shots & Concentrés</div>
+                        <h3>BOOST SHOT</h3>
+                        <p class="product-description">Shot énergie gingembre-curcuma</p>
+                        <p class="product-price">3,50 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 7 -->
+                    <div class="product-card">
+                        <img src="img/produits/cacao_energy.webp" alt="Cacao Energy">
+                        <div class="product-category">Laits Végétaux</div>
+                        <h3>CACAO ENERGY</h3>
+                        <p class="product-description">Lait d'amande au cacao cru</p>
+                        <p class="product-price">4,90 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 8 -->
+                    <div class="product-card">
+                        <img src="img/produits/choco_bliss.webp" alt="Choco Bliss">
+                        <div class="product-category">Laits Végétaux</div>
+                        <h3>CHOCO BLISS</h3>
+                        <p class="product-description">Lait de noisette chocolaté</p>
+                        <p class="product-price">5,20 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 9 -->
+                    <div class="product-card">
+                        <img src="img/produits/choco_boost.webp" alt="Choco Boost">
+                        <div class="product-category">Laits Végétaux</div>
+                        <h3>CHOCO BOOST</h3>
+                        <p class="product-description">Lait d'avoine protéiné au cacao</p>
+                        <p class="product-price">5,50 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 10 -->
+                    <div class="product-card">
+                        <img src="img/produits/digest_zen.webp" alt="Digest Ease">
+                        <div class="product-category">Infusions Bien-être</div>
+                        <h3>DIGEST EASE</h3>
+                        <p class="product-description">Infusion digestion menthe-fenouil</p>
+                        <p class="product-price">4,70 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 11 -->
+                    <div class="product-card">
+                        <img src="img/produits/energy_mate.webp" alt="Energy Mate">
+                        <div class="product-category">Thés Bio</div>
+                        <h3>ENERGY MATE</h3>
+                        <p class="product-description">Thé vert matcha énergisant</p>
+                        <p class="product-price">4,80 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+
+                    <!-- Produit 12 -->
+                    <div class="product-card">
+                        <img src="img/produits/focus_tea.webp" alt="Focus Tea">
+                        <div class="product-category">Thés Bio</div>
+                        <h3>FOCUS TEA</h3>
+                        <p class="product-description">Thé blanc concentration</p>
+                        <p class="product-price">4,70 €</p>
+                        <button class="add-to-cart">Ajouter au panier</button>
+                    </div>
+                </main>
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <a href="#" class="page-number current">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-number">4</a>
+                <a href="#" class="page-number">5</a>
+                <a href="#" class="page-next">Suivant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>VitaGreen</h4>
+                    <ul>
+                        <li><a href="notre-histoire.html">Notre histoire</a></li>
+                        <li><a href="nos-valeurs.html">Nos valeurs</a></li>
+                        <li><a href="#">Notre équipe</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Nos produits</h4>
+                    <ul>
+                        <li><a href="nos-produits.html">Jus & Nectars</a></li>
+                        <li><a href="nos-produits.html">Infusions & Thés</a></li>
+                        <li><a href="nos-produits.html">Boissons énergisantes</a></li>
+                        <li><a href="nos-produits.html">Eaux infusées</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Engagement</h4>
+                    <ul>
+                        <li><a href="processus.html">Environnement</a></li>
+                        <li><a href="nos-valeurs.html">Éthique</a></li>
+                        <li><a href="partenaires-producteurs.html">Communauté</a></li>
+                        <li><a href="processus.html">Transparence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <li><a href="contact.html">Points de vente</a></li>
+                        <li><a href="contact.html">FAQ</a></li>
+                        <li><a href="contact.html">Presse</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 VitaGreen - Tous droits réservés | Des boissons saines, pour vous et la planète</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
